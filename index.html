@@ -39,8 +39,13 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="./img/logo.png" class="img-fluid">
+                <div class="col-12 col-sm-3 align-items-center align-middle">
+                    <img src="./img/logo.png" class="img-fluid mx-auto d-block">
+                </div>
+                <div class="col-12 col-sm-3 mx-auto d-block">
+                    <a class="btn btn-warning form-control btn-sm" href="#reserveForm">
+                        Reserve
+                    </a>
                 </div>
             </div>
         </div>
@@ -72,8 +77,17 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail align-self-center order-sm-last" src="img/buffet.png" alt="uthappizza">
+                    <div class="media-body">
+                        <h2>Weekend Grand Buffet
+                            <span class="badge badge-danger">NEW</span>
+                        </h2>
+                        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
 
@@ -97,6 +111,76 @@
                 </div>
             </div>
         </div>
+
+        <div class="row row-content" id="reserveForm">
+            <div class="col-sm-8 ind offset-md-2">
+                <div class="card">
+                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                    <div class="card-body">
+                        <form>
+                            <div class="row form-group">
+                                <div class="col col-12 col-md-2">Number of Guests</div>
+                                <div class="col col-12 col-md-10">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="nameOfGusts"
+                                               id="nameOfGusts1"
+                                               value="1">
+                                        <label class="form-check-label" for="nameOfGusts1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="nameOfGusts"
+                                               id="nameOfGusts2"
+                                               value="2">
+                                        <label class="form-check-label" for="nameOfGusts2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="nameOfGusts"
+                                               id="nameOfGusts3"
+                                               value="3">
+                                        <label class="form-check-label" for="nameOfGusts2">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="nameOfGusts"
+                                               id="nameOfGusts4"
+                                               value="4">
+                                        <label class="form-check-label" for="nameOfGusts4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="nameOfGusts"
+                                               id="nameOfGusts5"
+                                               value="5">
+                                        <label class="form-check-label" for="nameOfGusts5">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="nameOfGusts"
+                                               id="nameOfGusts6"
+                                               value="6">
+                                        <label class="form-check-label" for="nameOfGusts6">6</label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="row form-group">
+                                <div class="col col-12 col-md-2">Date and Time</div>
+                                <div class="col col-12 col-md-4 mb-2">
+                                    <input type="date" name="bday" class="form-control" placeholder="Date">
+                                </div>
+                                <div class="col col-12 col-md-4 mb-2">
+                                    <input type="time" name="bday" class="form-control" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col col-12 offset-md-2">
+                                    <button class="btn btn-primary ">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <footer class="footer">
