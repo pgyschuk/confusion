@@ -74,3 +74,15 @@ body{
   bottom: 0px;
   z-index: 1;
 }
+
+.modal-content {
+  .modal-header {
+    background: $background-dark;
+    h4, button {
+      color: #ffffff;
+    }
+  };
+  .card-body{
+    background: $background-pale;
+  }
+}
